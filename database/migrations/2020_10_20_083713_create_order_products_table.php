@@ -19,7 +19,7 @@ class CreateOrderProductsTable extends Migration
             $table->integer('orderID');
             $table->integer('productCode');
             $table->integer('qty')->nullable();
-            $table->decimal('priceEach',19,0);
+            $table->decimal('priceEach',19,0)->nullable();
             $table->timestamps();
 
             $table->foreign('orderID')->references('id')->on('orders');

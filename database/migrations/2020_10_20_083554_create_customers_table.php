@@ -18,15 +18,15 @@ class CreateCustomersTable extends Migration
             $table->id();
             $table->integer('salesRepEmployee');
             $table->string('name',255);
-            $table->string('firstName',255)->nullable();
-            $table->string('lastName',255)->nullable();
-            $table->string('phone',255)->nullable();
+            $table->string('firstName',255);
+            $table->string('lastName',255);
+            $table->string('phone',255);
             $table->string('address1',255)->nullable();
-            $table->string('address2',255)->nullable();
-            $table->string('city',255)->nullable();
-            $table->string('state',255)->nullable();
+            $table->string('address2',255);
+            $table->string('city',255);
+            $table->string('state',255);
             $table->integer('postalCode')->nullable();
-            $table->string('country',255)->nullable();
+            $table->string('country',255);
             $table->decimal('creditLimit',19,0)->nullable();
             $table->timestamps();
 

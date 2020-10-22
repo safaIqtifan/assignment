@@ -18,7 +18,7 @@ class CreatePaymentsTable extends Migration
             $table->string('checkNum',255);
             $table->integer('customerID');
             $table->dateTime('paymentDate');
-            $table->decimal('amount',19,0);
+            $table->decimal('amount',19,0)->nullable();
             $table->timestamps();
 
             $table->foreign('customerID')->references('id')->on('customers');

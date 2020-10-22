@@ -18,12 +18,12 @@ class CreateProductsTable extends Migration
             $table->integer('code',5);
             $table->integer('productlineID');
             $table->string('name',255);
-            $table->integer('scale');
+            $table->integer('scale')->nullable();
             $table->string('vendor',255);
             $table->string('pdtDescription',255);
-            $table->integer('qtyInStock');
-            $table->decimal('buyPrice',19,0);
-            $table->string('MSRP',255);
+            $table->integer('qtyInStock')->nullable();
+            $table->decimal('buyPrice',19,0)->nullable();
+            $table->string('MSRP',255)->nullable();
             $table->timestamps();
 
             $table->foreign('productlineID')->references('id')->on('productlines');

@@ -9,7 +9,8 @@ $factory->define(\App\payment::class, function (Faker $faker) {
     return [
 
         'checkNum' =>$faker->word,
-        'customerID' =>$faker->randomNumber(4)
+        'customerID' =>$faker->randomNumber(4),
+        'paymentDate' =>$faker->date()
 
     ];
 });

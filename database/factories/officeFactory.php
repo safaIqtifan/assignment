@@ -10,7 +10,12 @@ $factory->define(office::class, function (Faker $faker) {
     return [
 
         'code' =>$faker->randomNumber(4),
-        'city' =>$faker->word
+        'city' =>$faker->city,
+        'phone' =>$faker->phoneNumber,
+        'address1' =>$faker->address,
+        'address2' =>$faker->address,
+        'state' =>$faker->state,
+        'country' =>$faker->country
 
     ];
 });

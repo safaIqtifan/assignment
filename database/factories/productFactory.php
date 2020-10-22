@@ -9,7 +9,10 @@ $factory->define(\App\product::class, function (Faker $faker) {
     return [
 
         'code' =>$faker->randomNumber(4),
-        'productlineID' =>$faker->randomNumber(4)
+        'productlineID' =>$faker->randomNumber(4),
+        'name' =>$faker->name,
+        'vendor' =>$faker->word,
+        'pdtDescription' =>$faker->word
 
     ];
 });

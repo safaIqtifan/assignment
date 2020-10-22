@@ -10,6 +10,10 @@ $factory->define(\App\employee::class, function (Faker $faker) {
 
         'id' =>$faker->randomNumber(4),
         'email' => $faker->unique()->safeEmail,
+        'lastName' =>$faker->name,
+        'firstName' =>$faker->name,
+        'officeCode' =>$faker->randomNumber(4),
+        'jobTitle' =>$faker->jobTitle
 
     ];
 });

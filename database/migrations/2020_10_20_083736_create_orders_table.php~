@@ -19,7 +19,7 @@ class CreateOrdersTable extends Migration
             $table->integer('customerID');
             $table->dateTime('orderDate');
             $table->dateTime('shippedDate');
-            $table->integer('status')->nullable();
+            $table->integer('status');
             $table->string('comments',255);
             $table->timestamps();
 
